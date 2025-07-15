@@ -1,0 +1,19 @@
+✅ OPTION 1: Use Plink (PuTTY’s SSH client)
+Download Plink.exe on Laptop 1
+From the official PuTTY page:
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+Enable OpenSSH Server on Laptop 2 (the same way as described earlier)
+
+On Laptop 1 (LAN), run this command from CMD or PowerShell:
+
+plink.exe -R 9000:17.x.x.x:80 David@192.168.0.105
+
+Replace David with the username on Laptop 2
+
+Replace 192.168.0.105 with Laptop 2's IP (use ipconfig to find it)
+
+It will prompt for your Laptop 2 login password
+
+http://localhost:9000
+8126342742
